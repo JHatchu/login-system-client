@@ -1,0 +1,218 @@
+/* Carousel container spacing */
+.container-fluid.mb-30 {
+    margin-bottom: 30px;
+  }
+  
+  /* Carousel image styling */
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 500px; /* adjust as needed */
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Carousel caption styling */
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .carousel-caption h4 {
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    margin: 0.5rem 0;
+  }
+  
+  /* Custom arrows */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: 100% 100%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Remove default Bootstrap sr-only class in case it's hidden */
+  .carousel-control-prev .sr-only,
+  .carousel-control-next .sr-only {
+    display: inline;
+    color: white;
+  }
+  
+  /* Carousel indicators */
+  .carousel-indicators li {
+    background-color: #000;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    opacity: 0.7;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #fff;
+    opacity: 1;
+  }
+  .section-title {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  /* Nav Tabs */
+  .section-title .nav-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 2px solid #dee2e6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .section-title .nav-tabs li {
+    margin: 5px;
+  }
+  
+  .section-title .nav-tabs li a {
+    display: block;
+    padding: 0.6rem 1.2rem;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .section-title .nav-tabs li.active a,
+  .section-title .nav-tabs li a:hover,
+  .section-title .nav-tabs li a:focus {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  /* Tab Content */
+  .section-title .tab-content {
+    background-color: #fff;
+    padding: 1.5rem;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+  }
+  
+  .section-title .tab-pane {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Paragraph and Headings */
+  .paragraph {
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .section-title h4, 
+  .section-title h5 {
+    margin-top: 1.5rem;
+    color: #343a40;
+    font-weight: 600;
+  }
+  
+  /* Custom UL */
+  .custom_ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .custom_ul li {
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: 0.8rem;
+    color: #444;
+    font-size: 1rem;
+  }
+  
+  .custom_ul li i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    color: #007bff;
+  }
+  
+  /* Table Styling */
+  .table {
+    margin-top: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .table th,
+  .table td {
+    padding: 0.75rem;
+    border: 1px solid #dee2e6;
+    text-align: left;
+  }
+  
+  .table-striped tbody tr:nth-child(odd) {
+    background-color: #f1f3f5;
+  }
+  
+  .table th[colspan="2"] {
+    text-align: center;
+  }
+  
+  /* Download Link */
+  .section-title a[role="link"] {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .section-title a[role="link"]:hover {
+    text-decoration: underline;
+  }
+  .tab-content {
+    overflow: visible !important;
+    height: auto !important;
+  }
+  
+  .tab-pane {
+    min-height:100%;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .tab-pane.active,
+  .tab-pane.show {
+    display: block;
+    opacity: 1;
+  }
+  
+  .read1a{
+    min-height: 100%;
+    overflow-y: auto;
+  }
+  #menu3{
+   padding-top: 10px;
+   min-height: 100%;
+   overflow-y: auto;
+  }

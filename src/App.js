@@ -1,38 +1,21 @@
-import { useContext } from 'react';
-import { useLocation } from 'react-router-dom';
-import './App.css';
-import {AuthContext} from './context/Authcontext';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-
-import Login from './login';
-import Register from './register';
-
-
-
-
-
-
-
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Header from "./pages/header";  // Import the static header
+import routes from "./routesConfig";  // Import the routes configuration
 
 function App() {
-    const {auth} = useContext(AuthContext) 
- 
-    
-
-return(
-  <div>
-
+  return (
+   <>
+     {/* This makes sure the Header is static on all pages */}
   
-    <Routes>
-   
-      <Route path='/' exact Component={Login}/>
-      <Route path='/register' exact Component={Register}/>
-    
- 
-    </Routes>
-
-  </div>
-)
+      {/* Main content area where routes will be rendered */}
+      <Routes>
+        {routes.map((route, index) => (
+          <Route key={index} path={route.path} element={<route.component />} />
+        ))}
+      </Routes>
+   </>
+  );
 }
 
 export default App;

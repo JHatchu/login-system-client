@@ -1,7 +1,7 @@
 import {useState, createContext, useEffect} from 'react'
 import jwtDecode from 'jwt-decode'
 import {useNavigate} from 'react-router-dom'
-import {useToast} from '@chakra-ui/react'
+//import {useToast} from '@chakra-ui/react'
 
  export const AuthContext = createContext()
 
@@ -12,7 +12,7 @@ export const AuthProvider = ({children}) => {
     const [auth, SetAuth] = useState([])
 
     
-     const Toast = useToast()
+     //const Toast = useToast()
      const Navigate = useNavigate()
 
 

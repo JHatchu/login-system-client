@@ -1,0 +1,183 @@
+/* General Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Register Form Container */
+#rg {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+#rghead h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+/* Form Styling */
+#rgform {
+  display: flex;
+  flex-direction: column;
+}
+
+#rgform label {
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+#rgform input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#rgform input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Error Message */
+#rgform div div {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Submit Button */
+#rgform button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#rgform button:hover {
+  background: #0056b3;
+}
+
+/* Login Link */
+#rglink {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+#rglink a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#rglink a:hover {
+  text-decoration: underline;
+}
+
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Login Container */
+#lg {
+  width: 350px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading */
+#lghead h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form */
+#lgform {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input Fields */
+#lgform input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border 0.3s ease-in-out;
+}
+
+#lgform input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Button */
+#lgform button {
+  background: #007BFF;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+#lgform button:hover {
+  background: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  #lg {
+      width: 90%;
+      padding: 20px;
+  }
+}
